@@ -1,0 +1,25 @@
+current directory: /home/ec2-user/rails-project/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.4.8/ext/bootsnap
+/home/ec2-user/.rbenv/versions/2.7.2/bin/ruby -I /home/ec2-user/.rbenv/versions/2.7.2/lib/ruby/2.7.0 -r ./siteconf20201008-18168-i3m5v0.rb extconf.rb
+creating Makefile
+
+current directory: /home/ec2-user/rails-project/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.4.8/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /home/ec2-user/rails-project/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.4.8/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+bootsnap.c: 関数 ‘bs_cache_path’ 内:
+bootsnap.c:274:39: 警告: 書式 ‘%llx’ は引数の型が ‘long long unsigned int’ であると予期されますが、第 5 引数の型は ‘uint64_t {aka long unsigned int}’ です [-Wformat=]
+   sprintf(*cache_path, "%s/%02x/%014llx", cachedir, first_byte, remainder);
+                                 ~~~~~~^
+                                 %014lx
+bootsnap.c: トップレベル:
+cc1: 警告: 認識できないコマンドラインオプション ‘-Wno-self-assign’ です
+cc1: 警告: 認識できないコマンドラインオプション ‘-Wno-parentheses-equality’ です
+cc1: 警告: 認識できないコマンドラインオプション ‘-Wno-constant-logical-operand’ です
+cc1: 警告: 認識できないコマンドラインオプション ‘-Wno-cast-function-type’ です
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/ec2-user/rails-project/vendor/bundle/ruby/2.7.0/gems/bootsnap-1.4.8/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20201008-18168-19ekerr/bootsnap
