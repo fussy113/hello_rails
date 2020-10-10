@@ -6,7 +6,8 @@ SHELL ["/bin/bash", "-l", "-c"]
 
 COPY --chown=docker:wheel ./ ./
 
-RUN bundle install -j4
+RUN bundle install -j4 && \
+    yarn install
 
 EXPOSE 3000
 
